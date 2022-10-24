@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="onClickChooseImage"
+    android:orientation="vertical"
+    tools:context=".Update">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ImagBD"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:minWidth="250dp"
+        android:minHeight="250dp"
+        android:onClick="onClickChooseImage"
+        android:scaleType="fitXY"
+        android:src="@drawable/gluxo"/>
+
+    <EditText
+        android:id="@+id/UpdataName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImagBD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Марка машины"
+        android:textColor="@color/black" />
+
+    <EditText
+        android:id="@+id/UpdataSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UpdataName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Мощность"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/Niz"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="-2dp"
+        android:background="@color/purple_200"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/Nazad"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#dde8f0"
+            android:onClick="onClickNAZAD"
+            android:text="Назад"
+            android:textColor="@color/white"
+            app:cornerRadius="25dp"
+            app:strokeColor="#7D8BE4"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/UpdateDATA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="45dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#dde8f0"
+            android:minHeight="48dp"
+            android:onClick="onClickUpdate"
+            android:text="Изменить"
+            android:textColor="@color/white"
+            app:cornerRadius="25dp"
+            app:strokeColor="#7D8BE4"
+            app:strokeWidth="1dp" />
+
+        <Button
+            android:id="@+id/DeletData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginHorizontal="45dp"
+
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#dde8f0"
+            android:minHeight="48dp"
+            android:onClick="onClickDelet"
+            android:text="Удалить"
+            android:textColor="@color/white"
+            app:cornerRadius="25dp"
+            app:strokeColor="#7D8BE4"
+            app:strokeWidth="1dp" />
+    </LinearLayout>
+
+</RelativeLayout>

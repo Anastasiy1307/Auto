@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Auto</string>
+    <string name="sort">По марке автомобиля</string>
+    <string name="sort_power">По мощности автомобиля</string>
+</resources>
